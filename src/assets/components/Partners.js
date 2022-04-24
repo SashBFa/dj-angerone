@@ -2,13 +2,14 @@ import React from "react";
 import { Background, Parallax } from "react-parallax";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
+
 import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/css/bundle";
 
 const Partners = () => {
   return (
     <div className="partners">
-      <Parallax strength={300}>
+      <Parallax strength={200}>
         <h2 className="partners__title">Partners & Sponsors</h2>
         <Background>
           <div className="partners__parallax" />
@@ -21,7 +22,7 @@ const Partners = () => {
             dynamicBullets: true,
           }}
           modules={[Pagination]}
-          className="parters__carousel"
+          className="mySwiper1 partners__carousel"
         >
           <SwiperSlide>
             <i className="fa-brands fa-gitkraken"></i>

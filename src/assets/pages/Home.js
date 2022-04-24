@@ -8,6 +8,7 @@ import Album from "../components/Album";
 import Fanbase from "../components/Fanbase";
 import TourSchedule from "../components/TourSchedule";
 import Partners from "../components/Partners";
+import Tickets from "../components/Tickets";
 
 const Home = () => {
   return (
@@ -69,6 +70,7 @@ const Home = () => {
       <Fanbase />
       <TourSchedule />
       <Partners />
+      <Tickets />
     </main>
   );
 };

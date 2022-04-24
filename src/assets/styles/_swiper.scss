@@ -1,17 +1,15 @@
 .swiper {
   width: 100%;
-  height: 20rem;
-  padding: 0 4rem;
+  height: 100%;
 }
 .swiper-pagination-bullet {
-  background-color: $white;
+  // background-color: $white;
+  padding: 0.6rem;
 }
 .swiper-pagination-bullet-active {
   background-color: $purple;
 }
-.swiper-pagination-bullets {
-  margin-bottom: 3rem;
-}
+
 .swiper-slide {
   text-align: center;
   background: transparent;

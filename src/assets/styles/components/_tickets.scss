@@ -1,0 +1,44 @@
+.tickets {
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+  }
+  &__carousel {
+    // height: 30rem;
+  }
+  &__card {
+    h3 {
+      font-size: 2rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: $grey4;
+      height: 2rem;
+    }
+    h4 {
+      font-size: 6rem;
+      font-weight: 400;
+      color: $grey4;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      em {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-top: 2rem;
+        font-style: normal;
+      }
+    }
+    p {
+      font-size: 1.4rem;
+      color: $grey4;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+      opacity: 0.6;
+    }
+    button {
+      margin: 1.5rem 0 5rem 0;
+    }
+  }
+}
