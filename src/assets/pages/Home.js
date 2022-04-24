@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom";
 import Album from "../components/Album";
 import Fanbase from "../components/Fanbase";
 import TourSchedule from "../components/TourSchedule";
+import Partners from "../components/Partners";
 
 const Home = () => {
   return (
@@ -67,6 +68,7 @@ const Home = () => {
       </div>
       <Fanbase />
       <TourSchedule />
+      <Partners />
     </main>
   );
 };

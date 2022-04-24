@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { tourData } from "../data/tour";
 
 const NextGig = () => {
-  const dateGig = new Date("June 06, 2022 10:00:00");
+  const dateGig = new Date(tourData[0].date);
   const [days, setDays] = useState();
   const [hours, setHours] = useState();
   const [mins, setMins] = useState();

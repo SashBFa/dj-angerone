@@ -1,0 +1,29 @@
+.partners {
+  margin: 6rem 0;
+  position: relative;
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: $white;
+    transform: translateY(3rem);
+  }
+  &__parallax {
+    height: 70rem;
+    width: 100vw;
+    background-image: -webkit-linear-gradient(
+        top,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0.1)
+      ),
+      url(./../../../../public/assets/images/homepage-sponsors-background.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  i {
+    font-size: 8rem;
+    color: $white2;
+    margin-bottom: 1rem;
+  }
+}

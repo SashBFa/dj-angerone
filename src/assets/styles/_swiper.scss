@@ -1,0 +1,30 @@
+.swiper {
+  width: 100%;
+  height: 20rem;
+  padding: 0 4rem;
+}
+.swiper-pagination-bullet {
+  background-color: $white;
+}
+.swiper-pagination-bullet-active {
+  background-color: $purple;
+}
+.swiper-pagination-bullets {
+  margin-bottom: 3rem;
+}
+.swiper-slide {
+  text-align: center;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}

@@ -1,57 +1,56 @@
-.fanbase{
-  margin: 2rem 0;
+.fanbase {
+  margin: 3rem 0;
   background-color: $grey;
   background-image: url(./../../../../public/assets/images/bg-circle-1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  &__bigbox{
+  &__bigbox {
     padding: 2rem;
   }
-  &__title{
+  &__title {
     font-size: 2rem;
     font-weight: 700;
     margin: 1.5rem 0 0.5rem 0;
     color: $white;
   }
-  &__p{
+  &__p {
     font-size: 1.2rem;
     font-weight: 300;
     color: $white;
   }
-  &__box{
+  &__box {
     margin: 3rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    i{
+    i {
       font-size: 3rem;
       color: $purple;
       text-shadow: 0.01rem 0.01rem 0.1rem $shadow;
     }
-    h3{
+    h3 {
       font-size: 1.5rem;
       font-weight: 600;
       color: $white;
       margin: 1.5rem 0 1rem 0;
     }
-    p{
+    p {
       font-size: 1.2rem;
       font-weight: 400;
       color: $white;
       text-align: center;
     }
   }
-
 }
-.spray{
+.spray {
   overflow: hidden;
   height: 120rem;
   padding-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  img{
+  img {
     border-radius: 0.5rem;
     box-shadow: 0.1rem 0.1rem 0.1rem $shadow;
   }

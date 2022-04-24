@@ -12,7 +12,7 @@ const Fanbase = () => {
           tracks, free downloads, and other great offers.
         </p>
         <div className="fanbase__box">
-          <i className="fa-solid fa-compact-disc"></i>
+          <i className="fa-solid fa-crown"></i>
           <h3 className="fanbase__h3">Exclusive Releases</h3>
           <p className="fanbase__info">
             Get access to unreleased albums and EPs before they are published.
@@ -27,7 +27,7 @@ const Fanbase = () => {
           </p>
         </div>
         <div className="fanbase__box">
-          <i className="fa-solid fa-compact-disc"></i>
+          <i className="fa-solid fa-cloud-arrow-down"></i>
           <h3 className="fanbase__h3">Free Downloads</h3>
           <p className="fanbase__info">
             Free tracks and remixes are regularly published for DJ Angerone's
