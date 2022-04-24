@@ -1,0 +1,155 @@
+.tour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2rem;
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1.5rem 0;
+  }
+  &__boxInput {
+    border: 0.05rem solid $grey;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+    background-color: $grey;
+    height: 12rem;
+    padding: 1rem 0;
+    input {
+      display: none;
+      &:checked + label {
+        position: relative;
+        color: $white;
+        transition: 0.3s ease-in-out;
+        &::after {
+          content: "";
+          height: 0.4rem;
+          width: 0;
+          background: $purple;
+          position: absolute;
+          border-radius: 1rem;
+          bottom: -0.5rem;
+          left: 50%;
+          transform: translateX(-50%);
+          -webkit-animation: anim 0.3s ease forwards;
+          animation: anim 0.6s ease forwards;
+          @-webkit-keyframes anim {
+            to {
+              width: 90%;
+            }
+          }
+          @keyframes anim {
+            to {
+              width: 90%;
+            }
+          }
+        }
+      }
+    }
+    label {
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      color: $grey4;
+      font-weight: 600;
+      letter-spacing: 0.2rem;
+      cursor: pointer;
+    }
+  }
+  &__display {
+    border: 0.05rem solid $grey5;
+    width: 100%;
+    padding: 3rem 1rem;
+    :first-child {
+      label {
+        margin-top: 1.5rem;
+        span {
+          top: 0rem;
+        }
+      }
+    }
+    :last-child {
+      label {
+        height: 2rem;
+      }
+    }
+  }
+  &__card {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    column-gap: 1rem;
+    grid-template-areas:
+      "a b"
+      "a c"
+      "a d"
+      "a e";
+    label {
+      border-left: 0.1rem solid $grey5;
+      margin: 0 auto;
+      position: relative;
+      grid-area: a;
+      span {
+        position: absolute;
+        top: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50rem;
+        background-color: $white;
+        border: 0.1rem solid $grey5;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        &:checked ~ span {
+          background-color: $purple;
+          outline: 0.1rem solid $grey5;
+          border: 0.8rem solid $white;
+        }
+      }
+    }
+    h5 {
+      grid-area: b;
+      color: $grey4;
+      font-size: 1.5rem;
+      opacity: 0.8;
+      font-weight: 500;
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+    h4 {
+      grid-area: c;
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin: 0.5rem 2rem 0.5rem 0;
+    }
+    p {
+      grid-area: d;
+      color: $grey4;
+      font-size: 1.2rem;
+      opacity: 0.8;
+      font-weight: 400;
+    }
+    button {
+      grid-area: e;
+      border: 0;
+      margin: 1rem 0 2.5rem 0;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      font-weight: 600;
+      width: 10.4rem;
+      cursor: pointer;
+      i {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
