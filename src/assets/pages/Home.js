@@ -9,6 +9,7 @@ import Fanbase from "../components/Fanbase";
 import TourSchedule from "../components/TourSchedule";
 import Partners from "../components/Partners";
 import Tickets from "../components/Tickets";
+import GalleryHome from "../components/GalleryHome";
 
 const Home = () => {
   return (
@@ -71,6 +72,7 @@ const Home = () => {
       <TourSchedule />
       <Partners />
       <Tickets />
+      <GalleryHome />
     </main>
   );
 };
