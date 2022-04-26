@@ -10,6 +10,7 @@ import TourSchedule from "../components/TourSchedule";
 import Partners from "../components/Partners";
 import Tickets from "../components/Tickets";
 import GalleryHome from "../components/GalleryHome";
+import News from "../components/News";
 
 const Home = () => {
   return (
@@ -73,6 +74,7 @@ const Home = () => {
       <Partners />
       <Tickets />
       <GalleryHome />
+      <News />
     </main>
   );
 };

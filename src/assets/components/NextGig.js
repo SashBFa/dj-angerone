@@ -25,7 +25,7 @@ const NextGig = () => {
       setSecs(secs);
     }, 1000);
     return () => clearInterval(interval);
-  }, []);
+  }, [dateGig]);
 
   return (
     <div className="nextGig">

@@ -3,7 +3,10 @@ import { galleryData } from "./../data/gallery";
 
 const GalleryHome = () => {
   return (
-    <div className="galleryHome" style={{ margin: "4rem 0 2rem 0" }}>
+    <div
+      className="galleryHome"
+      style={{ margin: "4rem 0 2rem 0", width: "100%" }}
+    >
       {galleryData &&
         galleryData.map((pict) => (
           <img

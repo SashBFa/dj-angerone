@@ -70,14 +70,14 @@ const TourSchedule = () => {
       </div>
       <div className="tour__display">
         {tourData &&
-          tourData.filter(handleFilterTodos()).map((tour) => (
+          tourData.filter(handleFilterTodos()).map((tour, index) => (
             <div key={tour.id} className="tour__card">
               <label>
                 <input
                   type="radio"
                   name="tourName"
                   value={tour.id}
-                  defaultChecked
+                  defaultChecked={index === 0}
                 />
                 <span></span>
               </label>
