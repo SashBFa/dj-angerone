@@ -1,42 +1,57 @@
-.nextGig{
+.nextGig {
   margin: 0 2rem;
   padding: 2rem;
   border-radius: 0.5rem;
-  background: url(./../../../../public/assets/images/bg-counter.jpg) center/cover;
+  background: url(./../../../../public/assets/images/bg-counter.jpg)
+    center/cover;
   color: $white;
   display: flex;
   flex-direction: column;
   align-items: center;
   transform: translateY(-25%);
   box-shadow: 0.1rem 0.1rem 0.1rem $shadow;
-  &__title{
+  &__title {
     font-size: 2rem;
     font-weight: 700;
   }
-  &__info{
+  &__info {
     font-size: 1.2rem;
     text-align: center;
     font-weight: 300;
     margin: 1rem 0rem;
   }
-  &__box{
+  &__box {
     width: 100%;
     padding: 0 2rem 2rem 2rem;
     display: flex;
     justify-content: space-between;
   }
-  &__count{
+  &__count {
     font-size: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    p{
+    p {
       font-size: 1.2rem;
       text-transform: uppercase;
       font-weight: 600;
     }
-    &:nth-child(4){
+    &:nth-child(4) {
       display: none;
+    }
+  }
+}
+@media screen and (min-width: 767px) {
+  .nextGig {
+    padding: 3rem 4rem;
+    &__title {
+      font-weight: 400;
+    }
+    &__count {
+      font-size: 5rem;
+      &:nth-child(4) {
+        display: block;
+      }
     }
   }
 }
