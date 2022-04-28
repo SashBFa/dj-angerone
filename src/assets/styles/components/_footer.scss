@@ -1,0 +1,48 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $grey;
+  padding: 5rem 2rem;
+  color: $white;
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0 1rem 0;
+  }
+  &__link {
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0.5rem auto;
+  }
+  &__active {
+    display: none;
+  }
+  &__socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 1rem auto 3rem auto;
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: $white;
+    text-align: center;
+    background-color: $grey5;
+    border-radius: 50rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  p {
+    font-size: 1.4rem;
+    color: $white3;
+    font-weight: 300;
+  }
+}

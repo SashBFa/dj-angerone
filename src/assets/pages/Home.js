@@ -11,6 +11,7 @@ import Partners from "../components/Partners";
 import Tickets from "../components/Tickets";
 import GalleryHome from "../components/GalleryHome";
 import News from "../components/News";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -48,13 +49,17 @@ const Home = () => {
       <div className="viewDisco">
         <Parallax strength={100}>
           <Background>
-            <div className="viewDisco__parallax" />
+            <div
+              className="viewDisco__parallax"
+              style={{
+                backgroundImage:
+                  "-webkit-linear-gradient(top,rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.1)),url(./assets/images/homepage-latest-releases-background.jpg)",
+              }}
+            />
           </Background>
           <div className="viewDisco__box">
-            <h2>
-              Listen to the latest <br /> Releases by DJ Angerone
-            </h2>
-            <NavLink to={"/discography"}>
+            <h2>Listen to the latest Releases by DJ Angerone</h2>
+            <NavLink className="viewDisco__link" to={"/discography"}>
               <button className="button button--big">view discography</button>
             </NavLink>
           </div>
@@ -75,6 +80,25 @@ const Home = () => {
       <Tickets />
       <GalleryHome />
       <News />
+      <div className="subscribe">
+        <Parallax strength={100}>
+          <Background>
+            <div
+              className="subscribe__parallax"
+              style={{
+                backgroundImage:
+                  "-webkit-linear-gradient(top,rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.1)),url(./assets/images/homepage-footer-background.jpg)",
+              }}
+            />
+          </Background>
+          <div className="subscribe__box">
+            <h2>Subscribe to stay informed</h2>
+            <input type="text" placeholder="Your E-mail" />
+            <button className="button button--big">subscribe</button>
+          </div>
+        </Parallax>
+      </div>
+      <Footer />
     </main>
   );
 };
