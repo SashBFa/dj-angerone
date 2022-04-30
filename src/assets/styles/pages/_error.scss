@@ -1,0 +1,26 @@
+.error {
+  width: 100vw;
+  height: 100vh;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  h1 {
+    font-size: 9rem;
+    letter-spacing: 0.5rem;
+    background: url(./../../../../public/assets/images/banner-img.jpg)
+      center/cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    margin: 1rem auto;
+    font-size: 1.2rem;
+  }
+}
