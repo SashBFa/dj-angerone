@@ -9,7 +9,7 @@ const Tour = () => {
     <div className="tourPage">
       <Navigation />
       <Header page={"tour schedule"} />
-      <TourSchedule />
+      <TourSchedule page={"tour"} />
       <Footer />
     </div>
   );

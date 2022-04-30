@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { tourData } from "../data/tour";
 
-const TourSchedule = () => {
+const TourSchedule = (props) => {
   const [mois, setMois] = useState([]);
   const uniqMonth = [...new Set(mois)];
   const [filter, setFilter] = useState(uniqMonth[0]);
@@ -38,8 +38,7 @@ const TourSchedule = () => {
 
   return (
     <div className="tour">
-      <h2 className="tour__title">Tour Schedule</h2>
-
+      {props.page ? null : <h2 className="tour__title">Tour Schedule</h2>}
       <div className="tour__boxInput">
         <input
           onChange={(e) => setFilter(e.target.value)}
