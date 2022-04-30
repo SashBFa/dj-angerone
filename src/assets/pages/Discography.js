@@ -1,9 +1,16 @@
 import React from "react";
+import Album from "../components/Album";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Navigation from "../components/Navigation";
 
 const Discography = () => {
   return (
-    <div>
-      <h1>Discography</h1>
+    <div className="discography">
+      <Navigation />
+      <Header />
+      <Album show={6} />
+      <Footer />
     </div>
   );
 };

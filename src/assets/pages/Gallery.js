@@ -1,9 +1,14 @@
 import React from "react";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Navigation from "../components/Navigation";
 
 const Gallery = () => {
   return (
-    <div>
-      <h1>Gallery</h1>
+    <div className="gallery">
+      <Navigation />
+      <Header />
+      <Footer />
     </div>
   );
 };
