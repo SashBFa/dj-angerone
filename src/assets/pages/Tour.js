@@ -8,7 +8,7 @@ const Tour = () => {
   return (
     <div className="tourPage">
       <Navigation />
-      <Header />
+      <Header page={"tour schedule"} />
       <TourSchedule />
       <Footer />
     </div>

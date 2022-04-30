@@ -1,30 +1,81 @@
 .header {
   position: relative;
   &__parallax {
-    height: 30rem;
     width: 100vw;
-    background-image: -webkit-linear-gradient(
-        top,
-        rgba(255, 255, 255, 0.1),
-        rgba(255, 255, 255, 0),
-        rgba(255, 255, 255, 0.1)
-      ),
-      url(./../../../../public/assets/images/homapage-banner-img.jpg);
-    background-position: left;
-    background-size: cover;
+    &--home {
+      height: 30rem;
+      background-image: -webkit-linear-gradient(
+          top,
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0.1)
+        ),
+        url(./../../../../public/assets/images/homapage-banner-img.jpg);
+      background-position: left;
+      background-size: cover;
+    }
+    &--other {
+      height: 15rem;
+      background-image: -webkit-linear-gradient(
+          top,
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0.1)
+        ),
+        url(./../../../../public/assets/images/banner-img.jpg);
+      background-position: 50% 30%;
+    }
   }
   &__box {
-    height: 30rem;
-    padding-left: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    &--home {
+      height: 30rem;
+      padding-left: 2rem;
+    }
+    &--other {
+      height: 15rem;
+    }
+  }
+  h3 {
+    height: 2.5rem;
+    font-size: 2.5rem;
+    color: $white;
   }
   &__title {
-    h3 {
-      height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+    h4 {
       font-size: 2.5rem;
+      height: 2.5rem;
       color: $white;
+      text-transform: uppercase;
+      text-shadow: 0.1rem 0.1rem 1rem $shadow;
+    }
+  }
+  &__links {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    i {
+      margin: 0 2rem;
+      box-shadow: 0.1rem 0.1rem 1rem $shadow;
+      background: -webkit-linear-gradient(right, $gold, $gold2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &__link {
+    color: $white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-shadow: 0.1rem 0.1rem 0.5rem $shadow;
+    text-transform: uppercase;
+    &--inactive {
+      opacity: 0.5;
     }
   }
 }

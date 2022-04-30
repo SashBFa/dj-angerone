@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <main className="home">
       <Navigation />
-      <Header />
+      <Header page={"home"} />
       <NextGig />
       <div className="aboutHome">
         <img

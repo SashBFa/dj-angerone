@@ -7,7 +7,7 @@ const Gallery = () => {
   return (
     <div className="gallery">
       <Navigation />
-      <Header />
+      <Header page={"gallery"} />
       <Footer />
     </div>
   );

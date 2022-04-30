@@ -8,7 +8,7 @@ const Discography = () => {
   return (
     <div className="discography">
       <Navigation />
-      <Header />
+      <Header page={"discography"} />
       <Album show={6} />
       <Footer />
     </div>

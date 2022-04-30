@@ -1,5 +1,5 @@
 .lastestReleases {
-  margin: 3rem 2rem;
+  margin: 3rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,12 +14,13 @@
     text-align: justify;
     text-align-last: center;
     color: $grey4;
+    margin: 0 2rem;
   }
 }
 
 .album {
   &__card {
-    margin: 3rem 0;
+    margin: 3rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
